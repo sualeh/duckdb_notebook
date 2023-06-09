@@ -15,7 +15,7 @@ conn.register(
     FROM
       read_csv_auto('datasets/people.csv', header=True)
 """
-    ).df(),
+    ).df()
 )
 
 conn.execute("DESCRIBE people").df()
@@ -31,7 +31,7 @@ conn.register(
     FROM
       read_csv_auto('datasets/people_personal.csv', header=True)
 """
-    ).df(),
+    ).df()
 )
 
 conn.execute("DESCRIBE people_personal").df()
